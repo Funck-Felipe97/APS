@@ -2,11 +2,12 @@
 <html>
 <head>
 	<title>Principal</title>
+	<link rel="stylesheet" type="text/css" href="css/formato_index.css">
 </head>
 <body>
-	<div id="todo">
+	<div id="geral">
 		<div id="header">
-			cabeça
+			<?php include('cabecalho.php'); ?>
 
 		</div>
 		<div id="menu">
