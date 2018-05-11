@@ -1,2 +1,2 @@
-<a href="login.php">Login</a><br>
-<a href="cadastro.php">Cadastro</a>
+<a href="cadastro.php" class="links_cabecalho" >Cadastre-se</a>
+<a href="login.php" class="links_cabecalho">Logar</a>

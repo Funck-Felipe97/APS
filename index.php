@@ -7,15 +7,15 @@
 <body>
 	<div id="geral">
 		<div id="header">
-			<?php include('cabecalho.php'); ?>
+			<?php include "cabecalho.php"; ?>
 
 		</div>
 		<div id="menu">
-			ombro
+			<?php include "menu.php"; ?>
 			
 		</div>
 		<div id="conteudo">
-			joelho
+			<?php include "conteudo.php" ?>
 
 		</div>
 		<div id="footer">

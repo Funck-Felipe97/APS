@@ -16,21 +16,37 @@ body{
 	overflow: hidden;
 	margin: 0 auto;
 }
-
+/*CABEÇALHO*/
 #header{
 	width: 100%;
 	height: 200px;
 	float: left;
 	background-color: #FBB; 
 }
+.links_cabecalho{
+	float: right;
+	padding: 10px;
+	margin: 5px 2px;
+	background-color: #145;
+	color: white;
+}
 
+/*FIM DO CABEÇALHO*/
+
+/*MENU*/
 #menu{
 	width: 100%;
 	height: 50px;
 	float: left;
 	background-color: #FAF;
 }
-
+.links_menu li a{
+	float: left;
+	padding: 15px;
+	background-color: #145;
+	color: white;
+}
+/*FIM DO MENU*/
 #conteudo{
 	width: 100%;
 	height: 600px;
@@ -43,3 +59,8 @@ body{
 	float: left;
 	background-color: #EFA;
 }
+
+
+
+
+
