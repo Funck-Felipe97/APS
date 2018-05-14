@@ -1,0 +1,16 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: #333;
+	list-style: none;
+}
+
+#geral{
+
+	
+	width: 500px;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+}
