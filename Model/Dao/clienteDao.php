@@ -103,4 +103,21 @@
 		}
 	}
 
+		$cli = new ClienteDao();
+
+
+		$cliente = new Cliente();
+		$cliente->setNome("Felipe");
+		$cliente->setCpf("1234567");
+		$cliente->setUser("Felipefii");
+		$cliente->setSenha(1234567);
+		$cliente->setData_nascimento("1990-07-03");
+		$endereco = new Endereco();
+		$endereco->setRua("alameda dos anjos");
+		$endereco->setBairro("santa helena");
+		$endereco->setCidade("Sao Luiz");
+		$endereco->setNumero(123);
+
+		$cliente->setEndereco($endereco);
+		$cli->insere_cliente($cliente);
  ?>
