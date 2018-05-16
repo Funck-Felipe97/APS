@@ -27,7 +27,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#home">HOME</a></li>
+        <li><a href="#myCarousel">HOME</a></li>
         <li><a href="#equipe">EQUIPE</a></li>
         <li><a href="#produtos">PRODUTOS</a></li>
         <li><a href="#contato">CONTATO</a></li>
@@ -91,7 +91,7 @@
   </a>
 </div>
 
-<div class="container text-center">
+<div id="equipe" class="container text-center">
   <h3>EQUIPE FJF</h3>
   <p><em>A melhor equipe de desenvolvimento</em></p>
   <p>Site desenvolvido para agendamento de horários.<br>
@@ -141,7 +141,7 @@
   </div>
 </div>
 </div>
-<div class="row text-center">
+<div id="produtos" class="row text-center">
 	<h3>PRODUTOS</h3>
   <div class="col-sm-4">
     <div class="thumbnail">
@@ -165,7 +165,7 @@
     </div>
   </div>
 </div>
-<div class="container">
+<div id="contato" class="container">
   <h3 class="text-center">Contato</h3>
   <p class="text-center"><em>Fale Conosco</em></p>
   <div class="row test">
