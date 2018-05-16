@@ -3,11 +3,13 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/formato_cadastro.css">
 </head>
 <body>
 
-	<div id="geral">
+	<div id="geral" style="width: 300px; margin: auto;">
 		
 		<form method="POST">
 			<div class="form-group" >
@@ -47,7 +49,7 @@
 			    <button type="submit" class="btn btn-primary">Submit</button>
 		  	</div>
 
-  <?php include("bootstrapform.php"); ?>
+  
 </form>
 
 

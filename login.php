@@ -33,6 +33,9 @@
             </form><!-- /form -->
             <a href="#" class="forgot-password">
                 Esqueceu a senha?
+            </a><br>
+            <a href="cadastro.php" class="cadastre-se">
+                Cadastre-se
             </a>
         </div><!-- /card-container -->
     </div><!-- /container -->
