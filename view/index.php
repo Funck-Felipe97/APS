@@ -8,7 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="css/format.css">
+  <link rel="stylesheet" type="text/css" href="../css/format.css">
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -56,26 +56,26 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="imagens/estilo.jpg" alt="New York">
+      <img src="../imagens/estilo.jpg" alt="New York">
       <div class="carousel-caption">
-        <h3>Procurando um melhor estilo?</h3>
-        <p>FJF faz isso por você.</p>
+        <h1>Procurando um melhor estilo?</h1>
+        <p><h3>FJF faz isso por você.</h3></p>
       </div> 
     </div>
 
     <div class="item">
-      <img src="imagens/estilo2.jpg" alt="Chicago">
+      <img src="../imagens/estilo2.jpg" alt="Chicago">
       <div class="carousel-caption">
-        <h3>Quer o melhor atendimento?</h3>
-        <p>Não pense muito - FJF é a melhor companhia de cortes de cabelos e barba.</p>
+        <h1>Quer o melhor atendimento?</h1>
+        <p><h3>Não pense muito - FJF é a melhor companhia de cortes de cabelos e barba.</h3></p>
       </div> 
     </div>
 
     <div class="item">
-      <img src="imagens/estilo3.jpg" alt="Los Angeles">
+      <img src="../imagens/estilo3.jpg" alt="Los Angeles">
       <div class="carousel-caption">
-        <h3>Com medo de mudar de estilo?</h3>
-        <p>Faça a melhor escolha e com FJF saia detonando.</p>
+        <h1>Com medo de mudar de estilo?</h1>
+        <p><h3>Faça a melhor escolha e com FJF saia detonando.</h3></p>
       </div> 
     </div>
   </div>
@@ -92,6 +92,7 @@
 </div>
 
 <div id="equipe" class="container text-center">
+  <br><br>
   <h3>EQUIPE FJF</h3>
   <p><em>A melhor equipe de desenvolvimento</em></p>
   <p>Site desenvolvido para agendamento de horários.<br>
@@ -100,10 +101,8 @@
   	 Desenvolvido para o curso de web 2, sob orientação do professor mestre Anderson Brilhador<br>
   	 Desenvolvido para o curso de web 2, sob orientação do professor mestre Anderson Brilhador<br>
   	 Desenvolvido para o curso de web 2, sob orientação do professor mestre Anderson Brilhador<br>
-  	 Desenvolvido para o curso de web 2, sob orientação do professor mestre Anderson Brilhador<br>
-  	 Desenvolvido para o curso de web 2, sob orientação do professor mestre Anderson Brilhador<br>
-  	 Desenvolvido para o curso de web 2, sob orientação do professor mestre Anderson Brilhador<br>
-  	 Desenvolvido para o curso de web 2, sob orientação do professor mestre Anderson Brilhador<br>
+  	 
+  	 
   </p>
   <br>
 <div class="row">
@@ -111,7 +110,7 @@
   <div class="col-sm-4">
     <p class="text-center"><strong>Felipe Nazário</strong></p><br>
     <a href="#demo" data-toggle="collapse">
-      <img src="imagens/Felipe.jpg" class="img-circle person" alt="Nazario">
+      <img src="../imagens/Felipe.jpg" class="img-circle person" alt="Nazario">
     </a>
     <div id="demo" class="collapse">
       <p>Graduando em ciências da computação</p>
@@ -122,7 +121,7 @@
   <div class="col-sm-4">
     <p class="text-center"><strong>Jean da Silva</strong></p><br>
     <a href="#demo2" data-toggle="collapse">
-      <img src="imagens/Jean.jpg" class="img-circle person" alt="Silva">
+      <img src="../imagens/Jean.jpg" class="img-circle person" alt="Silva">
     </a>
     <div id="demo2" class="collapse">
       <p>Graduando em ciências da computação</p>
@@ -132,7 +131,7 @@
   <div class="col-sm-4">
     <p class="text-center"><strong>Felipe Funck</strong></p><br>
     <a href="#demo3" data-toggle="collapse">
-      <img src="imagens/Felipe2.jpg" class="img-circle person" alt="Funck">
+      <img src="../imagens/Felipe2.jpg" class="img-circle person" alt="Funck">
     </a>
     <div id="demo3" class="collapse">
       <p>Graduando em ciências da computação</p>
@@ -142,24 +141,25 @@
 </div>
 </div>
 <div id="produtos" class="row text-center">
+  <br><br>
 	<h3>PRODUTOS</h3>
   <div class="col-sm-4">
     <div class="thumbnail">
-      <img src="imagens/estilo.jpg" alt="Paris">
+      <img src="../imagens/estilo.jpg" alt="Paris">
       <p><strong>Paris</strong></p>
       <p>Fri. 27 November 2015</p>
     </div>
   </div>
   <div class="col-sm-4">
     <div class="thumbnail">
-      <img src="imagens/estilo.jpg" alt="New York">
+      <img src="../imagens/estilo.jpg" alt="New York">
       <p><strong>New York</strong></p>
       <p>Sat. 28 November 2015</p>
     </div>
   </div>
   <div class="col-sm-4">
     <div class="thumbnail">
-      <img src="imagens/estilo.jpg" alt="San Francisco">
+      <img src="../imagens/estilo.jpg" alt="San Francisco">
       <p><strong>San Francisco</strong></p>
       <p>Sun. 29 November 2015</p>
     </div>
