@@ -6,8 +6,9 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/format_login.css">
+    <link rel="stylesheet" type="text/css" href="../css/format.css">
 </head>
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <!------ Include the above in your HEAD tag ---------->
 
@@ -15,10 +16,12 @@
     you can substitue the span of reauth email for a input with the email and
     include the remember me checkbox
     -->
-    <div class="container" style="width: 300px;">
-        <div class="card card-container">
+    <?php include "navbar.php" ?>
+
+    <div id="log" class="container" style="width: 300px;">
+        <div id="log2" class="card card-container">
             <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
-            <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+            <img id="profile-img" class="profile-img-card" src="../imagens/teste.png" />
             <p id="profile-name" class="profile-name-card"></p>
             <form class="form-signin">
                 <span id="reauth-email" class="reauth-email"></span>
