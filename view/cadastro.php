@@ -1,62 +1,56 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="../css/formato_cadastro.css">
-</head>
-<body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/format.css">
+<link rel="stylesheet" type="text/css" href="../css/format_login.css">
+<?php include "navbar.php"; ?>
 
-	<div id="geral" style="width: 300px; margin: auto;">
-		
-		<form method="POST">
-			<div class="form-group" >
-				<label for="exampleFormControlInput1"><h1>Cadastro de Usuários</h1></label><br>
-			    <label for="exampleFormControlInput1">Nome</label>
-			    <input type="text" class="form-control" id="exampleFormControlInput1">
-			  	<br>
-			    <label for="exampleFormControlInput1">CPF</label>
-			    <input type="text" class="form-control" id="exampleFormControlInput1">
-			  	<br>
-			    <label for="exampleFormControlInput1">Data de Nascimento</label>
-			    <input type="date" class="form-control" id="exampleFormControlInput1">
-			  	<br>
-			    <label for="exampleFormControlInput1">Email</label>
-			    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-			  	<br>
-			    <label for="exampleFormControlInput1">Telefone</label>
-			    <input type="text" class="form-control" id="exampleFormControlInput1">
-			  	<br>
-			    <label for="exampleFormControlInput1">Cidade</label>
-			    <input type="text" class="form-control" id="exampleFormControlInput1">
-			 	<br>
-			    <label for="exampleFormControlInput1">Bairro</label>
-			    <input type="text" class="form-control" id="exampleFormControlInput1">
-			  	<br>
-			    <label for="exampleFormControlInput1">Rua</label>
-			    <input type="text" class="form-control" id="exampleFormControlInput1">
-			  	<br>
-			    <label for="exampleFormControlInput1">Nome de Usuario</label>
-			    <input type="text" class="form-control" id="exampleFormControlInput1">
-			  	<br>
-			    <label for="exampleFormControlInput1">Senha</label>
-			    <input type="password" class="form-control" id="exampleFormControlInput1">
-			  	<br>
-			    <label for="exampleFormControlInput1">Repetir Senha</label>
-			    <input type="password" class="form-control" id="exampleFormControlInput1"><br>
-			    <button type="submit" class="btn btn-primary">Submit</button>
-		  	</div>
 
-  
+<form style="max-width: 500px; margin: 50px;" method="POST" action="cadastroUser.php">
+	<label for="exampleFormControlInput1"><h1>Cadastro de Usuários</h1></label>
+  	<div class="card card-container" style="width: 100%; height: 70%">
+  		<div class="form-row">
+      <div class="form-group col-md-6">      	
+        <label for="entrarNome">Nome</label>
+        <input type="email" class="form-control" placeholder="Nome" name="nome">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="entrarCPF">CPF</label>
+        <input type="text" class="form-control" placeholder="000.000.000-00">
+      </div>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="entrarData">Data de Nascimento</label>
+      <input type="date" class="form-control">
+    </div>
+    <div class="form-group col-md-12">
+      <label for="entrarEmail">Email</label>
+      <input type="email" class="form-control" placeholder="email@exemplo.com.br">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="entrarTelefone">Telefone</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="entrarCidade">Cidade</label>
+        <input type="text" class="form-control" name="cidade">
+        
+      </div>
+      <div class="form-group col-md-2">
+        <label for="entrarBairro">Bairro</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group col-md-12">
+        <label for="entrarRua">Rua</label>
+        <input type="text" class="form-control">
+      </div>      
+    </div>
+    <button type="submit" class="btn btn-primary" style="float: right;" hidden="cadastroUser.php">Próximo</button>
+  	</div>
+    
+
 </form>
 
-
-
-
-	</div>
-</body>
-</html>
 
 
