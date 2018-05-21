@@ -33,7 +33,7 @@
         <input type="text" class="form-control" name="telefone" required="">
       </div>
       <div class="form-group col-md-4">
-        <label for="entrarCidade">Cidade</label>
+        <label for="entrarCidade">Cide</label>
         <input type="text" class="form-control" name="cidade" required="">
         
       </div>
