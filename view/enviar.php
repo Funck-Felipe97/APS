@@ -1,27 +1,34 @@
 <?php 
  	
- 	if(isset($_POST['submit'])){
+	include "../Model/Dao/banco.php";
 
- 		if(getimagesize($_FILES['imagem']['tmp_name'])==false){
- 			
- 		}else{
- 			$image = addslashes($_FILES['imagem']['tmp_name']);
- 			$name = addslashes($_FILES['imagem']['name']);
- 			$image = file_get_contents($image);
- 			$image = base64_encode($image);
- 			Salvar($name, $image);
- 		}
+ 	//var_dump($_FILES["imagem"]);
+ 	//$conteudo = file_get_contents($_FILES["imagem"]["tmp_name"]);
 
- 	}
- 	function Salvar($name,$image){
+ 	/*
 
- 		$PDO = new PDO("mysql:host=localhost;dbname=aps_db","root","");
- 		$sql = "INSERT INTO tb_imagem (img_nome,img_imagem) VALUES (?, ?)";
- 		$stmt = $PDO->prepare($sql);
- 		$stmt->execute(array($name,$image));
- 		
+		$sql = "INSERT INTO tb_imagem(img_descricao , img_nome , img_tamanho , img_imagem) VALUES (? , ? , ? , ?)";
+	 	$stmt = $pdo->prepare($sql);
+	 	$stmt->execute(array(
+	 			"lalalla" , 
+	 			$_FILES["imagem"]["name"],
+	 			$_FILES["imagem"]["size"],
+	 			$conteudo
+	 		));
 
- 	}
-	
+
+ 	*/
+
+ 	$pdo = getConnection();
+
+ 	
+ 	$sql = "SELECT * FROM tb_imagem WHERE img_id = 1";
+ 	$stmt = $pdo->prepare($sql);
+ 	$stmt->execute(array());
+ 	$resul = $stmt->fetchAll()[0];
+ 	
+
 
 ?>
+
+<img src="data:image;base64,<?= base64_encode($resul[4]) ?>" />
