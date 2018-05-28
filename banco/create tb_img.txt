@@ -1,7 +1,10 @@
 CREATE TABLE `tb_imagem` (
   `img_id` INTEGER NOT NULL AUTO_INCREMENT,
-  `img_nome` VARCHAR(20) NOT NULL,
+  `img_descricao` VARCHAR(100) NOT NULL,
+  `img_nome` VARCHAR(25) NOT NULL,
+  `img_tamanho` VARCHAR(25) NOT NULL,
   `img_imagem` LONGBLOB NOT NULL,
+  `img_tipo` VARCHAR(25) DEFAULT NULL,
   PRIMARY KEY (`img_id`)
 ) ENGINE=InnoDB
 CHECKSUM=0
