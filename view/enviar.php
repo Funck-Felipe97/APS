@@ -1,11 +1,12 @@
 <?php 
  	
 	include "../Model/Dao/banco.php";
-
- 	//var_dump($_FILES["imagem"]);
- 	//$conteudo = file_get_contents($_FILES["imagem"]["tmp_name"]);
-
+	$pdo = getConnection();
  	/*
+ 	var_dump($_FILES["imagem"]);
+ 	$conteudo = file_get_contents($_FILES["imagem"]["tmp_name"]);
+
+
 
 		$sql = "INSERT INTO tb_imagem(img_descricao , img_nome , img_tamanho , img_imagem) VALUES (? , ? , ? , ?)";
 	 	$stmt = $pdo->prepare($sql);
@@ -16,10 +17,10 @@
 	 			$conteudo
 	 		));
 
+*/
+ 	
 
- 	*/
-
- 	$pdo = getConnection();
+ 	
 
  	
  	$sql = "SELECT * FROM tb_imagem WHERE img_id = 1";
