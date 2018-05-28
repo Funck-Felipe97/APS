@@ -38,7 +38,7 @@ function validarSenha(){
 
 <form style="max-width: 500px; margin: 50px auto;" method="POST" action="teste.php" name="form">
   <label for="exampleFormControlInput1" style="margin-left: 65px;"><h1>Cadastro de Usuários</h1></label>
-    <div class="card card-container" style="width: 100%; height: 280px;"">
+    <div class="card card-container" style="width: 100%; height: 280px;">
 
 
       <input type="hidden" name="nome" value="<?php echo $_POST["nome"] ?>">

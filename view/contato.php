@@ -15,10 +15,13 @@
           <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
         </div>
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          <input class="form-control" id="email" name="email" placeholder="E-mail" type="email" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="assunto" name="assunto" placeholder="Assunto" type="email" required>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comentario" rows="5"></textarea>
+      <textarea class="form-control" id="comments" name="comentario" placeholder="Comentario" rows="5"></textarea>
       <div class="row">
         <div class="col-md-12 form-group">
           <button class="btn pull-right" type="submit">Enviar</button>

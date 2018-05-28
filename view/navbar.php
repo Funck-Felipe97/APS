@@ -1,3 +1,5 @@
+
+
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -19,7 +21,8 @@
             <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="login.php">Agende Aqui</a></li>
+            <li><a href="login.php">Agende Aqui</a></li> <!-- faltando teste de login !-->
+            <li><a href="login.php">Login</a></li>
           </ul>
         </li>
         

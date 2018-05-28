@@ -15,6 +15,7 @@
 <!-- incluindo scroll da pagina para locais especificos -->
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
+    
     <!-- incluindo navbar.php (Menu) -->
     <?php include "navbar.php" ?>
     <!-- incluindo carousel.php (imagens e slides das mesmas) -->

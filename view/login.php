@@ -1,24 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Login</title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/format_login.css">
     <link rel="stylesheet" type="text/css" href="../css/format.css">
-</head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-
-<!------ Include the above in your HEAD tag ---------->
-
-<!--
-    you can substitue the span of reauth email for a input with the email and
-    include the remember me checkbox
-    -->
     <?php include "navbar.php" ?>
 
-    <div id="log" class="container" style="width: 300px;">
+    <div class="container">
+        
+    <div id="log" class="container">
         <div id="log2" class="card card-container">
             <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
             <img id="profile-img" class="profile-img-card" src="../imagens/teste.png" />
@@ -42,5 +32,5 @@
             </a>
         </div><!-- /card-container -->
     </div><!-- /container -->
-</body>
-</html>
+
+</div>
