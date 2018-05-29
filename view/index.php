@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-  <title>Bootstrap Theme The Band</title>
+  <title>FJF horarios</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- necessario para a utilização do bootstrap css e js -->
