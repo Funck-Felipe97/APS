@@ -1,22 +1,57 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>administrador</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
 
-	<div class="container">
-		<form action="../Controller/gerenciaProduto.php" method="POST" enctype="multipart/form-data">
-			<input type="hidden" name="op" value="cadastrarProduto">
-			<p>Descricao : <input type="text" name="descricao"> </p>
-			<p>Preço     : <input type="text" name="preco">     </p>
-			<p>Imagem    : <input type="file" name="imagem" id="fileToUpload"></p>
-			<input type="submit" value="Cadastrar" name="submit">
+<head>
+  <title>Cadastro de produtos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- necessario para a utilização do bootstrap css e js -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- css extra -->
+  <link rel="stylesheet" type="text/css" href="css/format.css">
+
+</head>
+
+<!-- incluindo scroll da pagina para locais especificos -->
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    
+    <!-- incluindo navbar.php (Menu) -->
+    <?php include "navbar.php" ?>
+    <!-- incluindo carousel.php (imagens e slides das mesmas) -->
+    <?php include "carousel.php" ?>
+   
+    <div  id="cadastro" class="container" style="height: 100%; margin-top: 5em; margin-bottom: 12em;">
+
+    	<form action="../Controller/gerenciaProduto.php" method="POST" enctype="multipart/form-data">
+    		<h1 style="margin-bottom: 2em; margin-top: 3em;">Cadastro de produtos</h1>
+	    	<input type="hidden" name="op" value="cadastrarProduto">
+
+	    	<div class="form-group">
+				 <label for="desc">Descrição :</label>
+				 <input type="text" class="form-control" id="desc" name="descricao">
+			</div>
+
+			<div class="form-group">
+				 <label for="preco">Preço :</label>
+				 <input type="text" class="form-control" id="preco" name="preco">
+			</div>
+
+			<div class="form-group">
+				 <label for="fileToUpload">Imagem :</label>
+				 <input type="file" name="imagem" id="fileToUpload">
+			</div>
+
+			<input type="submit" value="Cadastrar" class="btn btn-primary">
+				
 		</form>
+
 	</div>
-	
-</body>
+
+    <!-- incluindo contato.php (pagina para envio de mensagens) -->
+    <?php include "contato.php" ?>
+
+  </body>
 </html>
+

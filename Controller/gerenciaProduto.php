@@ -2,10 +2,7 @@
 	
 	include "../Model/VO/produto.php";
 	include "../Model/Dao/produtoDao.php";
-
-	$pro = new ProdutoDao();
-	var_dump($pro->listar_produtos_todos());
-
+	
 	if(isset($_POST["op"])){
 		switch ($_POST["op"]) {
 			case "cadastrarProduto":
