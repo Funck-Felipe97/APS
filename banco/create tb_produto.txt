@@ -1,0 +1,7 @@
+CREATE TABLE tb_produto (
+	pro_id INT NOT NULL auto_increment,
+    pro_descricao VARCHAR(100) NOT NULL,
+    pro_img_id INT,
+    primary key(pro_id),
+    foreign key(pro_img_id) references tb_imagem(img_id)
+)
