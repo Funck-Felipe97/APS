@@ -1,14 +1,12 @@
 <?php 
 	include 'banco.php';
 	include '../VO/imagem.php';
-	/**
-	* 
-	*/
+	
 	class ImagemDao
 	{
 		private $connection;
 
-		function __construct(argument)
+		function __construct()
 		{
 			$this->connection = getConnection();
 		}
@@ -25,6 +23,7 @@
 				));
 
 		}
+
 		public function listar_imagem_todas(){
 			$sql = "SELECT * FROM tb_imagem";
  			$stmt = $pdo->prepare($sql);
@@ -32,15 +31,13 @@
  			
  			$imagem = array();
 			foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $linha) {
-				$imagem = $this->preenche_imagem($linha);
+				$imagem = $this->preencher_imagem($linha);
 				$imagens[] = $imagem;
 	
 			}
 			return $imagens;
  			
 		}
-
-
 
 		public function preencher_imagem($linha){
 			$imagem = new Imagem();

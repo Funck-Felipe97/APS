@@ -2,6 +2,43 @@ CREATE TABLE tb_produto (
 	pro_id INT NOT NULL auto_increment,
     pro_descricao VARCHAR(100) NOT NULL,
     pro_img_id INT,
+    pro_preco DECIMAL,
     primary key(pro_id),
     foreign key(pro_img_id) references tb_imagem(img_id)
 )
+
+# <-------PROCEDURE QUE LISTA TODOS OS PRODUTOS------->
+DELIMITER $$
+
+CREATE PROCEDURE listar_produtos_todos()
+BEGIN
+
+    SELECT * 
+    FROM tb_produto
+    JOIN tb_imagem on pro_img_id = img_id
+    ORDER BY pro_id DESC;
+    
+END $$
+DELIMITER ;
+
+# <-------PROCEDURE QUE INSERE UM PRODUTO------->
+DELIMITER $$
+
+CREATE PROCEDURE inserir_produto(IN descricao VARCHAR(100) , IN preco DECIMAL  , IN nome_img VARCHAR(25) ,
+IN tamanho_img VARCHAR(25) , IN img_conteudo LONGBLOB)
+BEGIN
+
+    #INSERINDO IMAGEM
+    INSERT INTO tb_imagem(img_nome , img_tamanho , img_imagem) VALUES (nome_img , tamanho_img , img_conteudo);
+    
+    #RETORNANDO O ID DO ULTIMO REGISTRO DE TB_IMAGEM
+    set @id_img = (SELECT MAX(img_id) FROM tb_imagem); 
+    
+    #INSERINDO PRODUTO
+    INSERT INTO tb_produto(pro_descricao , pro_preco , pro_img_id) VALUES(descricao , preco , @id_img);
+    
+END $$
+DELIMITER ;
+
+
+

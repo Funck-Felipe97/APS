@@ -10,12 +10,15 @@
 		private $tamanho;
 		private $conteudo;
 
-		function __construct(){
-			
+		function __construct($nome = "" , $tamanho = "" , $conteudo = null , $id = null){
+			$this->id = $id;
+			$this->nome = $nome;
+			$this->tamanho = $tamanho;
+			$this->conteudo = $conteudo;
 		}
 
 		public function getId(){
-			return $this->id();
+			return $this->id;
 		}
 
 		public function setId($id){
@@ -23,7 +26,7 @@
 		}
 
 		public function getNome(){
-			return $this->nome();
+			return $this->nome;
 		}
 
 		public function setNome($nome){
@@ -31,7 +34,7 @@
 		}
 
 		public function getTamanho(){
-			return $this->tamanho();
+			return $this->tamanho;
 		}
 
 		public function setTamanho($tamanho){
@@ -39,7 +42,7 @@
 		}
 
 		public function getConteudo(){
-			return $this->conteudo();
+			return $this->conteudo;
 		}
 
 		public function setConteudo($conteudo){
