@@ -11,12 +11,15 @@
   <!-- css extra -->
   <link rel="stylesheet" type="text/css" href="css/format.css">
 
+  <!-- arquivos para o input de imagens -->
+  <link rel="stylesheet" type="text/css" href="css/inputFile.css">
+  <script type="text/javascript" src="js/inputFile.js"></script>
+
 </head>
 
 <!-- incluindo scroll da pagina para locais especificos -->
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    
     <!-- incluindo navbar.php (Menu) -->
     <?php include "navbar.php" ?>
     <!-- incluindo carousel.php (imagens e slides das mesmas) -->
@@ -29,22 +32,26 @@
 	    	<input type="hidden" name="op" value="cadastrarProduto">
 
 	    	<div class="form-group">
-				 <label for="desc">Descrição :</label>
+				 <label for="desc">Descrição</label>
 				 <input type="text" class="form-control" id="desc" name="descricao">
 			</div>
 
 			<div class="form-group">
-				 <label for="preco">Preço :</label>
+				 <label for="preco">Preço</label>
 				 <input type="text" class="form-control" id="preco" name="preco">
 			</div>
 
+			<label for="imagem">Imagem</label>
 			<div class="form-group">
-				 <label for="fileToUpload">Imagem :</label>
-				 <input type="file" name="imagem" id="fileToUpload">
+				<label class="customFileInput clearfix">
+        		<div class="button">Escolher um arquivo</div>
+        		<div class="fileName"></div>
+        		<input type="file" name="imagem" onchange="showFileName(this)">
+    			</label>
 			</div>
 
 			<input type="submit" value="Cadastrar" class="btn btn-primary">
-				
+	
 		</form>
 
 	</div>
