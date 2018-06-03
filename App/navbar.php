@@ -14,7 +14,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.php#myCarousel">HOME</a></li>
         <li><a href="index.php#equipe">EQUIPE</a></li>
-        <li><a href="index.php#produtos">PRODUTOS</a></li>
+        <li><a href="produtos.php#produtos">PRODUTOS</a></li>
         <li><a href="index.php#contato">CONTATO</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">AGENDAR

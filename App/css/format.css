@@ -57,7 +57,6 @@
     }
 }
 
-
  /* CSS para classe person em imagens da equipe */
 .person {
     border: 3px solid transparent;
@@ -107,4 +106,27 @@
     border: 1px solid #333;
     background-color: #fff;
     color: #000;
+}
+
+
+/* CSS para ajustar deixar todas as imagem dos produtos com o mesmo tamanho */
+
+#produtos{
+    max-width: 100%; 
+    margin-bottom: 3em;
+    margin-top: 3em;"
+}
+
+#divProduto1{
+    height: 33em;
+}
+
+#divProduto2{
+    height: 33em;
+}
+
+#imagem{
+    align-items: center;
+    height: 70%;
+    width: 70%;
 }

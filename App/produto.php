@@ -1,4 +1,3 @@
-
 <div id="produtos" class="row text-center">
   <br><br>
   <h3>PRODUTOS</h3>
@@ -15,9 +14,9 @@
   ?>
 
 
-  <div class="col-sm-4">
-    <div class="thumbnail">
-      <img src="<?php echo($img); ?>" alt="Paris">
+  <div class="col-sm-4" id="divProduto1">
+    <div class="thumbnail" id="divProduto2">
+      <img src="<?php echo($img); ?>" alt="Paris" id="imagem">
       <p><strong><?php echo($produtos[$i]->getPreco()); ?></strong></p>
       <p><?php echo($produtos[$i]->getDescricao()); ?></p>
     </div>
@@ -25,4 +24,11 @@
   
 <?php }; ?>
 
+<center>
+    <a href="produtos.php">
+      <h3> Vizualizar Todos</h3>
+    </a>
+</center>
+
 </div>
+
