@@ -17,7 +17,7 @@
   <div class="col-sm-4" id="divProduto1">
     <div class="thumbnail" id="divProduto2">
       <img src="<?php echo($img); ?>" alt="Paris" id="imagem">
-      <p><strong><?php echo($produtos[$i]->getPreco()); ?></strong></p>
+      <p><strong><?php echo("R$ ".$produtos[$i]->getPreco()); ?></strong></p>
       <p><?php echo($produtos[$i]->getDescricao()); ?></p>
     </div>
   </div>
