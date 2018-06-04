@@ -10,7 +10,7 @@
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="../imagens/estilo.jpg" alt="New York">
+      <img src="imagens/estilo.jpg" alt="New York">
       <div class="carousel-caption">
         <h1>Procurando um melhor estilo?</h1>
         <p><h3>FJF faz isso por você.</h3></p>
@@ -18,7 +18,7 @@
     </div>
 
     <div class="item">
-      <img src="../imagens/estilo2.jpg" alt="Chicago">
+      <img src="imagens/estilo2.jpg" alt="Chicago">
       <div class="carousel-caption">
         <h1>Quer o melhor atendimento?</h1>
         <p><h3>Não pense muito - FJF é a melhor companhia de cortes de cabelos e barba.</h3></p>
@@ -26,7 +26,7 @@
     </div>
 
     <div class="item">
-      <img src="../imagens/estilo3.jpg" alt="Los Angeles">
+      <img src="imagens/estilo3.jpg" alt="Los Angeles">
       <div class="carousel-caption">
         <h1>Com medo de mudar de estilo?</h1>
         <p><h3>Faça a melhor escolha e com FJF saia detonando.</h3></p>
