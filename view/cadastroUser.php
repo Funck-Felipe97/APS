@@ -13,8 +13,13 @@ function validarSenha(){
 
   var s1 = document.form.senha.value;
   var s2 = document.form.senha2.value;
+  var tam = s1.length;
 
-  
+      if(tam <= 7){
+        alert("senha deve conter no mínimo 8 caracteres");
+        return false;
+      
+
       if (s1 == "" || s2 == "") {
       alert("preencha todos os campos!");
       return false;    
@@ -26,6 +31,7 @@ function validarSenha(){
         return false;
       }
     }
+  }
 } 
 </script>
 
