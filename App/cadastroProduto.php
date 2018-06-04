@@ -22,42 +22,45 @@
 
     <!-- incluindo navbar.php (Menu) -->
     <?php include "navbar.php" ?>
-    <!-- incluindo carousel.php (imagens e slides das mesmas) -->
-    <?php include "carousel.php" ?>
+    
    
     <div  id="cadastro" class="container" style="height: 100%; margin-top: 5em; margin-bottom: 12em;">
 
-    	<form action="../Controller/gerenciaProduto.php" method="POST" enctype="multipart/form-data">
-    		<h1 style="margin-bottom: 2em; margin-top: 3em;">Cadastro de produtos</h1>
-	    	<input type="hidden" name="op" value="cadastrarProduto">
+    <div class="col-md-7">
+      
+        <form action="../Controller/gerenciaProduto.php" method="POST" enctype="multipart/form-data">
+        <h1 style="margin-bottom: 2em; margin-top: 3em;">Cadastro de produtos</h1>
+        <input type="hidden" name="op" value="cadastrarProduto">
 
-	    	<div class="form-group">
-				 <label for="desc">Descrição</label>
-				 <input type="text" class="form-control" id="desc" name="descricao">
-			</div>
+        <div class="form-group">
+         <label for="desc">Descrição</label>
+         <input type="text" class="form-control" id="desc" name="descricao" required="" >
+      </div>
 
-			<div class="form-group">
-				 <label for="preco">Preço</label>
-				 <input type="text" class="form-control" id="preco" name="preco">
-			</div>
+      <div class="form-group">
+         <label for="preco">Preço</label>
+         <input type="text" class="form-control" id="preco" name="preco" required="" placeholder="R$ 0,00">
+      </div>
 
-			<label for="imagem">Imagem</label>
-			<div class="form-group">
-				<label class="customFileInput clearfix">
-        		<div class="button">Escolher um arquivo</div>
-        		<div class="fileName"></div>
-        		<input type="file" name="imagem" onchange="showFileName(this)">
-    			</label>
-			</div>
+      <label for="imagem">Imagem</label>
+      <div class="form-group">
+        <label class="customFileInput clearfix">
+            <div class="button">Escolher um arquivo</div>
+            <div class="fileName"></div>
+            <input type="file" name="imagem" onchange="showFileName(this)" required="">
+          </label>
+      </div>
 
-			<input type="submit" value="Cadastrar" class="btn btn-primary">
-	
-		</form>
+      <input type="submit" value="Cadastrar" class="btn btn-primary">
+  
+    </form>
+    <br>
+    <a href="admin.php" class="btn btn-primary">Voltar</a>
+    </div>
 
-	</div>
+	   </div>
 
-    <!-- incluindo contato.php (pagina para envio de mensagens) -->
-    <?php include "contato.php" ?>
+    
 
   </body>
 </html>
