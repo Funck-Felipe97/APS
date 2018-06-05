@@ -21,9 +21,9 @@
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <!-- incluindo navbar.php (Menu) -->
-    <?php include "navbar.php"; ?>
+    <?php include "componentes/navbar.php"; ?>
     <!-- incluindo carousel.php (imagens e slides das mesmas) -->
-    <?php include "carousel.php"; ?>
+    <?php include "componentes/carousel.php"; ?>
    
     <div id="produtos" class="row text-center">
       <br><br>
@@ -51,7 +51,7 @@
     </div>
 
     <!-- incluindo contato.php (pagina para envio de mensagens) -->
-    <?php include "contato.php" ?>
+    <?php include "componentes/contato.php" ?>
 
   </body>
 </html>

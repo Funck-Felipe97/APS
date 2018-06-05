@@ -10,7 +10,7 @@
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 	<!-- incluindo navbar.php (Menu) -->
-    <?php include "navbar.php" ?>
+    <?php include "componentes/navbar.php" ?>
 
     <div class="container">
   		<br><br><br>
