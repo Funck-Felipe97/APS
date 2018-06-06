@@ -4,7 +4,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/format_login.css">
     <link rel="stylesheet" type="text/css" href="css/format.css">
-    <?php include "navbar.php" ?>
+    <?php include "componentes/navbar.php" ?>
 
     <div class="container">
         
