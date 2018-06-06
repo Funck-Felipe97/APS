@@ -37,7 +37,7 @@ function validarSenha(){
 
 </head>
 <body>
-  <?php include "navbar.php"; ?>
+  <?php include "componentes/navbar.php"; ?>
 
 
 
@@ -65,14 +65,14 @@ function validarSenha(){
       </div>
       <div class="form-row">
         <label for="entrarSenha">Senha</label>
-        <input type="password" class="form-control" placeholder="No mínimo 8 caracteres" name="senha" required="">
+        <input type="text" class="form-control" placeholder="No mínimo 8 caracteres" name="senha" required="">
 
         
 
       </div>
       <div class="form-row">
         <label for="entrarData">Repetir Senha</label>
-        <input type="password" class="form-control" placeholder="confirme a senha" name="senha2" required="">
+        <input type="text" class="form-control" placeholder="confirme a senha" name="senha2" required="">
       </div>
       
 
