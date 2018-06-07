@@ -23,7 +23,7 @@
     <!-- incluindo equipe.php (pagina da equipe) -->
     <?php include "componentes/equipe.php" ?>
     <!-- incluindo produto.php (pagina que mostra os produtos) -->
-    <?php include "componentes/produto.php" ?>
+    
     <!-- incluindo contato.php (pagina para envio de mensagens) -->
     <?php include "componentes/contato.php" ?>
 

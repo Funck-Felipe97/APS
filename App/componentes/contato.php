@@ -1,7 +1,8 @@
 
 
 <div id="contato" class="container">
-  <h3 class="text-center">Contato</h3>
+  <form method="POST" action="./Controller/gerenciaContato.php">
+    <h3 class="text-center">Contato</h3>
   <p class="text-center"><em>Fale Conosco</em></p>
   <div class="row test">
     <div class="col-md-4">
@@ -29,4 +30,5 @@
       </div> 
     </div>
   </div>
+  </form>
 </div>
