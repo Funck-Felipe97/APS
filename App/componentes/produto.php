@@ -5,7 +5,6 @@
   <?php 
       include "../Controller/gerenciaProduto.php";
       $produtos = listar_produtos_todos();
-
       if(count($produtos) > 2)
         for ($i=0; $i < 3; $i++) { 
           $aux = $produtos[$i]->getImagem();
