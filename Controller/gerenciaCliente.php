@@ -15,18 +15,18 @@
 
 	function cadastrar(){
 		$clienteDao = new ClienteDao();
-		$cliente = new Cliente(
-			$_POST["nome"],
-			$_POST["cpf"],
-			$_POST["data"],
-			$_POST["email"],
-			$_POST["telefone"],
-			$_POST["cidade"],
-			$_POST["bairro"],
-			$_POST["rua"],
-			$_POST["user"],
-			$_POST["senha"],
-		);
+		$cliente = new Cliente();
+		$cliente->setNome = $_POST["nome"];
+		$cliente->setCpf = $_POST["cpf"];
+		$cliente->setData = $_POST["data"];
+		$cliente->setEmail = $_POST["email"];
+		$cliente->setTelefone = $_POST["telefone"];
+		$cliente->setCidade = $_POST["cidade"];
+		$cliente->setBairro = $_POST["bairro"];
+		$cliente->setRua = $_POST["rua"];
+		$cliente->setUser = $_POST["user"];
+		$cliente->setSenha = $_POST["senha"];
+		
 
 		$clienteDao->insere_cliente($cliente);
 	}
