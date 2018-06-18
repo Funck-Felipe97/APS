@@ -17,15 +17,15 @@
 
     
     <!-- incluindo navbar.php (Menu) -->
-    <?php include "componentes/navbar.php" ?>
+    <?php include "componentes/navbar.php"; ?>
     <!-- incluindo carousel.php (imagens e slides das mesmas) -->
-    <?php include "componentes/carousel.php" ?>
+    <?php include "componentes/carousel.php"; ?>
     <!-- incluindo equipe.php (pagina da equipe) -->
-    <?php include "componentes/equipe.php" ?>
+    <?php include "componentes/equipe.php"; ?>
     <!-- incluindo produto.php (pagina que mostra os produtos) -->
-    <?php include "componentes/produto.php" ?>
+    <?php include "componentes/produto.php"; ?>
     <!-- incluindo contato.php (pagina para envio de mensagens) -->
-    <?php include "componentes/contato.php" ?>
+    <?php include "componentes/contato.php"; ?>
 
 
   </body>
