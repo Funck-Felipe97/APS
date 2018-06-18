@@ -18,7 +18,7 @@
 		$cliente = new Cliente();
 		$cliente->setNome = $_POST["nome"];
 		$cliente->setCpf = $_POST["cpf"];
-		$cliente->setData = $_POST["data"];
+		$cliente->setData_nascimento = $_POST["data"];
 		$cliente->setEmail = $_POST["email"];
 		$cliente->setTelefone = $_POST["telefone"];
 		$cliente->setCidade = $_POST["cidade"];
