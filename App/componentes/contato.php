@@ -1,7 +1,7 @@
 
 
 <div id="contato" class="container">
-  <form method="POST" action="./Controller/gerenciaContato.php">
+  <form method="POST" action="../Controller/gerenciaContato.php">
     <h3 class="text-center">Contato</h3>
   <p class="text-center"><em>Fale Conosco</em></p>
   <div class="row test">
@@ -19,7 +19,7 @@
           <input class="form-control" id="email" name="email" placeholder="E-mail" type="email" required>
         </div>
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="assunto" name="assunto" placeholder="Assunto" type="email" required>
+          <input class="form-control" id="assunto" name="assunto" placeholder="Assunto" type="text" required>
         </div>
       </div>
       <textarea class="form-control" id="comments" name="comentario" placeholder="Comentario" rows="5"></textarea>

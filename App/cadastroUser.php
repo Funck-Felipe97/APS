@@ -42,11 +42,11 @@ function validarSenha(){
 
 
 
-<form style="max-width: 500px; margin: 50px auto;" method="POST" action="teste.php" name="form">
+<form style="max-width: 500px; margin: 50px auto;" method="POST" action="../controller/gerenciaCliente.php" name="form">
   <label for="exampleFormControlInput1" style="margin-left: 65px;"><h1>Cadastro de Usuários</h1></label>
     <div class="card card-container" style="width: 100%; height: 280px;">
 
-
+      <input type="hidden" name="op" value="cadastrarCliente">
       <input type="hidden" name="nome" value="<?php echo $_POST["nome"] ?>">
       <input type="hidden" name="cpf" value="<?php echo $_POST["cpf"] ?>">
       <input type="hidden" name="data" value="<?php echo $_POST["data"] ?>">

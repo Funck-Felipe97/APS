@@ -11,8 +11,11 @@
 		private $cidade;
 		private $numero;
 
-		function __construct(){
-			
+		function __construct($rua = null, $bairro = null, $cidade = null , $numero){
+			$this->cidade = $cidade;
+			$this->bairro = $bairro;
+			$this->rua = $rua;
+			$this->numero = $numero;
 		}
 
 		public function getId(){

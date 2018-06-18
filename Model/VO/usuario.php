@@ -15,13 +15,17 @@
 		private $senha;
 		private $data_nascimento;
 		private $endereco;
-		private $cargo;
-
-		public function __construct(){
-			
+		
+	
+		function __construct($nome = null,$cpf = null,$data = null,$email = null, $numero = null , $cidade = null,$bairro = null,$rua = null,$user = null,$senha = null){
+			$this->nome = $nome;
+			$this->cpf = $cpf;
+			$this->data_nascimento = $data;
+			$this->user = $user;
+			$this->senha = $senha;
+			$this->endereco = new Endereco($rua , $bairro , $cidade , $numero); 
 		}
-			
-
+	
 		public function getId(){
 			return $this->id;
 		}
@@ -78,13 +82,6 @@
 			$this->endereco = $endereco;
 		}
 
-		public function getCargo(){
-			return $this->cargo;
-		}
-
-		public function setCargo($cargo){
-			$this->cargo = $cargo;
-		}
 	}
 
  ?>

@@ -1,8 +1,7 @@
 <?php 
 	
 	include "banco.php";
-	include_once "../Vo/cliente.php";
-
+	
 	/**
 	* @Funck
 	*/
@@ -18,17 +17,20 @@
 			$sql = "CALL insere_cliente(? , ? , ? , ? , ? , ? , ? , ? , ?);";
 			$stmt = $this->connection->prepare($sql);
 			
+			$end = $cliente->getEndereco();
+
 			$stmt->execute(
 				array($cliente->getNome() ,
 					  $cliente->getCpf() ,
 					  $cliente->getSenha() ,
 					  $cliente->getUser() ,
 					  $cliente->getData_nascimento() ,
-					  $cliente->getEndereco()->getRua() ,
-					  $cliente->getEndereco()->getBairro() ,
-					  $cliente->getEndereco()->getCidade() ,
-					  $cliente->getEndereco()->getNumero()
+					  $end->getRua() ,
+					  $end->getBairro() ,
+					  $end->getCidade() ,
+					  $end->getNumero()
 					));
+
 		}
 
 		public function listar_clientes_todos(){
@@ -103,21 +105,4 @@
 		}
 	}
 
-		$cli = new ClienteDao();
-
-
-		$cliente = new Cliente();
-		$cliente->setNome("Felipe");
-		$cliente->setCpf("1234567");
-		$cliente->setUser("Felipefii");
-		$cliente->setSenha(1234567);
-		$cliente->setData_nascimento("1990-07-03");
-		$endereco = new Endereco();
-		$endereco->setRua("alameda dos anjos");
-		$endereco->setBairro("santa helena");
-		$endereco->setCidade("Sao Luiz");
-		$endereco->setNumero(123);
-
-		$cliente->setEndereco($endereco);
-		$cli->insere_cliente($cliente);
  ?>

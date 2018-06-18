@@ -1,6 +1,6 @@
 <?php 
 	
-	include "../Model/VO/usuario.php";
+	include "../Model/VO/cliente.php";
 	include "../Model/Dao/clienteDao.php";
 
 	if(isset($_POST["op"])){
@@ -20,14 +20,14 @@
 			$_POST["cpf"],
 			$_POST["data"],
 			$_POST["email"],
-			$_POST["telefone"],
+			12,
 			$_POST["cidade"],
 			$_POST["bairro"],
 			$_POST["rua"],
 			$_POST["user"],
-			$_POST["senha"],
+			$_POST["senha"]
 		);
-
+		var_dump($cliente);
 		$clienteDao->insere_cliente($cliente);
 	}
 
