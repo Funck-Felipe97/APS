@@ -40,6 +40,7 @@
         <div class="form-group col-md-6">
           <label for="entrarServico">Serviços</label>
           <select type="select" class="selectpicker" multiple name="servicos">
+            <?php $_POST["op"] = "retornarElementos"; ?>
             <?php foreach ($servicos as $servico) { ?>
                <option> <?php echo($servico->getDescricao()); ?> </option> 
             <?php }; ?>

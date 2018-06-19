@@ -20,34 +20,11 @@
 				<ul class="nav nav-pills nav-stacked">
 	    		<li class="active"><a href="#">Funções Administradoras</a></li>
 
-				<li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Open Modal</button></li>
 				
-
-			
-			<div id="myModal" class="modal fade" role="dialog">
-			  <div class="modal-dialog">
-
-			    <!-- Modal content-->
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal">&times;</button>
-			        <h4 class="modal-title">Modal Header</h4>
-			      </div>
-			      <div class="modal-body">
-			        <p>Teste botão</p>
-			        <?php include "cadastro.php" ?>
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			      </div>
-			    </div>
-
-			  </div>
-			</div>   
-	  	
 	  		
-	    		<li><a href="#" class="btn btn-primary">Cadastrar Funcionários</a></li>
-	    		<li><a href="cadastroProduto.php" class="btn btn-primary">Cadastrar Imagens</a></li>
+	    		<li><a href="Admin/cadastroFuncionario.php" class="btn btn-primary">Cadastrar Funcionários</a></li>
+	    		<li><a href="cadastroProduto.php" class="btn btn-primary">Cadastrar Produtos</a></li>
+	    		<li><a href="Admin/cadastroServico.php" class="btn btn-primary">Cadastrar Serviços</a></li>
 	    		<li><a href="#" class="btn btn-primary">Verificar Agendamentos</a></li>    
   			</ul>
 	  	</div>

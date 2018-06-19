@@ -24,7 +24,7 @@
 
       <div class="col-md-7">
       
-          <form action="../../Controller/gerenciaServico.php" method="POST" enctype="multipart/form-data">
+          <form action="../../Controller/gerenciaServicos.php" method="POST" enctype="multipart/form-data">
           <h1 style="margin-bottom: 2em; margin-top: 3em;">Cadastro de Serviços</h1>
             <input type="hidden" name="op" value="cadastrarServico">
 
