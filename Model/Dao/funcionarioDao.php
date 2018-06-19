@@ -1,8 +1,7 @@
 <?php 
 	
 	include "banco.php";
-	include_once "../Vo/funcionario.php";
-
+	
 	/**
 	* @Funck
 	*/

@@ -10,13 +10,20 @@
 
 <?php 
   include "../componentes/navbar.php";
-  include "../../Controller/gerenciaServico.php"; 
+  include "../../Model/VO/servico.php";  
+  include "../../Model/Dao/ServicoDao.php";
+  
+  $servDao = new ServicoDao();
+  $servicos = $servDao->listar_servicos_todos();
 ?>
 
 
 <form style="max-width: 500px; margin: 50px auto;" method="POST" action="../../Controller/gerenciaFuncionario.php">
+
+  <input type="hidden" name="op" value="cadastrarFuncionario">
+
 	<label for="exampleFormControlInput1" style="margin-left: 65px;"><h1>Cadastro de Funcionarios</h1></label>
-  	<div class="card card-container" style="width: 100%; height: 80%">
+  	<div class="card card-container" style="width: 100%; height: 95%">
   		<div class="form-row">
 
         <div class="form-group col-md-6">      	
@@ -31,23 +38,32 @@
 
         <div class="form-group col-md-6">
           <label for="entrarCargo">Cargo</label>
-          <select class="form-control" id="entrarCargo">
-            <option value="admin">Administrador</option>
-            <option value="fun">Funcionario</option>
+          <select class="form-control" id="entrarCargo" name="cargo">
+            <option value="Administrador">Administrador</option>
+            <option value="Funcionario">Funcionario</option>
           </select>
         </div>
 
         <div class="form-group col-md-6">
           <label for="entrarServico">Serviços</label>
           <select type="select" class="selectpicker" multiple name="servicos">
-            <?php $_POST["op"] = "retornarElementos"; ?>
             <?php foreach ($servicos as $servico) { ?>
                <option> <?php echo($servico->getDescricao()); ?> </option> 
             <?php }; ?>
           </select>
         </div>
 
-      </div>
+        </div>
+
+        <div class="form-group col-md-6">
+          <label for="entrarUser">Usuario</label>
+          <input type="text" class="form-control" name="user" required="" id="entrarUser">
+        </div>
+
+        <div class="form-group col-md-6">
+          <label for="entrarSenha">Senha</label>
+          <input type="text" class="form-control" name="senha" required="" id="entrarSenha">
+        </div>
 
         <div class="form-group col-md-6">
           <label for="entrarData">Data de Nascimento</label>
@@ -66,7 +82,7 @@
         </div>
 
         <div class="form-group col-md-4">
-          <label for="entrarCidade">Cide</label>
+          <label for="entrarCidade">Cidade</label>
           <input type="text" class="form-control" name="cidade" required="">   
         </div>
 
