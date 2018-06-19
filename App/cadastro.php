@@ -49,7 +49,6 @@
     <button type="submit" class="btn btn-primary" style="float: right;">Próximo</button>
   	</div>
     
-
 </form>
 
 

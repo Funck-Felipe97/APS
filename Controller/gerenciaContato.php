@@ -17,12 +17,12 @@
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = 'tls';
 
-    $mail->Username = 'seu   email';
-    $mail->Password = 'sua   senha';
+    $mail->Username = "funck@alunos.utfpr.edu.br";
+    $mail->Password = 'qexlht75';
     $mail->Port = 587;
     
     $mail->setFrom($_POST["email"]);
-    $mail->addAddress('seu   email');
+    $mail->addAddress("funck@alunos.utfpr.edu.br");
     $mail->isHTML(true); /* Indicamos o uso do HTML no conteúdo do e-mail;*/
      
     $mail->Subject = $assunto; /* assunto da msg*/
