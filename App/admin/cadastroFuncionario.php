@@ -8,8 +8,10 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 
-<?php include "../componentes/navbar.php"; ?>
-<?php include "../../Controller/gerenciaServico.php"; ?>
+<?php 
+  include "../componentes/navbar.php";
+  include "../../Controller/gerenciaServico.php"; 
+?>
 
 
 <form style="max-width: 500px; margin: 50px auto;" method="POST" action="../../Controller/gerenciaFuncionario.php">
@@ -37,11 +39,11 @@
 
         <div class="form-group col-md-6">
           <label for="entrarServico">Serviços</label>
-          <input type="select" class="selectpicker" multiple name="servicos">
+          <select type="select" class="selectpicker" multiple name="servicos">
             <?php foreach ($servicos as $servico) { ?>
                <option> <?php echo($servico->getDescricao()); ?> </option> 
             <?php }; ?>
-          </input>
+          </select>
         </div>
 
       </div>
