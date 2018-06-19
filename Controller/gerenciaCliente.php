@@ -47,8 +47,18 @@
 		
 
 		$cliente = $clienteDao->buscar_cliente_login($cliente);
-		$_SESSION["user"] = $cliente->getUser();
-		header("Location:../App/index.php");
+		
+
+
+		if (count($cliente->getUser()) > 0) {
+			$_SESSION["user"] = $cliente->getUser();
+			header("Location:../App/index.php");
+		}else{
+			
+			header("Location:../App/login.php");
+
+		}
+		
 	}
 
 

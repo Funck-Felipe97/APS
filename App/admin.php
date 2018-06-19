@@ -20,7 +20,7 @@
 				<ul class="nav nav-pills nav-stacked">
 	    		<li class="active"><a href="#">Funções Administradoras</a></li>
 
-				
+				<li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Open Modal</button></li>
 				
 
 			
