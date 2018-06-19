@@ -11,6 +11,17 @@
 			$this->connection = getConnection();
 		}
 
+
+		public function inserir_servico($servico){
+			
+			$sql = "INSERT INTO tb_servicos (ser_descricao, ser_preco) VALUES (?, ?)";
+			$stmt = $this->connection->prepare($sql);
+			$stmt->execute(array(
+				$servico->getDescricao() ,
+				$servico->getPreco()
+			));
+		}
+
 		public function listar_servicos_todos(){
 			$sql = "SELECT *FROM tb_servicos;";
 			$stmt = $this->connection->prepare($sql);
@@ -31,6 +42,7 @@
 			$servico->setPreco($linha["ser_preco"]);
 			return $servico;
 		}
+
 	}
 
 ?>

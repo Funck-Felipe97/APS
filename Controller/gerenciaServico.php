@@ -1,7 +1,7 @@
 <?php  
 	
-    include "../../Model/VO/servico.php";
-	include "../../Model/Dao/ServicoDao.php";
+    include "../Model/VO/servico.php";
+	include "../Model/Dao/ServicoDao.php";
 
 	$servicoDao = new ServicoDao();
     $servicos = $servicoDao->listar_servicos_todos();
@@ -20,7 +20,14 @@
 
 
 	function inserirServico(){
-		echo ("cadastrando serviço");
+
+		$servicoDao = new ServicoDao();
+		$servico = new Servico();
+
+		$servico->setDescricao($_POST["descricao"]);
+		$servico->setPreco($_POST["preco"]);
+
+		$servicoDao->inserir_servico($servico);
 	}
 
  ?>
