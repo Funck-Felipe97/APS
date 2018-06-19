@@ -1,4 +1,5 @@
 <?php
+
 	include "../bibliotecas/PHPMailer/src/PHPMailer.php";
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
@@ -11,18 +12,17 @@
     }
       
     $mail = new PHPMailer();
-     
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = 'tls';
-    $mail->Username = 'seuemail';
-    $mail->Password = 'suasenha';
+
+    $mail->Username = 'seu   email';
+    $mail->Password = 'sua   senha';
     $mail->Port = 587;
-     
+    
     $mail->setFrom($_POST["email"]);
-    $mail->addAddress('seuemail');
-     
+    $mail->addAddress('seu   email');
     $mail->isHTML(true); /* Indicamos o uso do HTML no conteúdo do e-mail;*/
      
     $mail->Subject = $assunto; /* assunto da msg*/

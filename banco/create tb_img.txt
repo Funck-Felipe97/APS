@@ -1,12 +1,13 @@
-CREATE TABLE `tb_imagem` (
-  `img_id` INTEGER NOT NULL AUTO_INCREMENT,
-  `img_descricao` VARCHAR(100) NOT NULL,
-  `img_nome` VARCHAR(25) NOT NULL,
-  `img_tamanho` VARCHAR(25) NOT NULL,
-  `img_imagem` LONGBLOB NOT NULL,
-  `img_tipo` VARCHAR(25) DEFAULT NULL,
-  PRIMARY KEY (`img_id`)
-) ENGINE=InnoDB
+CREATE TABLE tb_imagem (
+  img_id INTEGER NOT NULL AUTO_INCREMENT,
+  img_descricao VARCHAR(100) NOT NULL,
+  img_nome VARCHAR(25) NOT NULL,
+  img_tamanho VARCHAR(25) NOT NULL,
+  img_imagem LONGBLOB NOT NULL,
+  img_tipo VARCHAR(25) DEFAULT NULL,
+  PRIMARY KEY (img_id)
+);
+ENGINE=InnoDB
 CHECKSUM=0
 DELAY_KEY_WRITE=0
 PACK_KEYS=0
