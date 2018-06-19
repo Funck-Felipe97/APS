@@ -75,6 +75,17 @@
 			$cliente = $this->preenche_cliente($stmt->fetch(PDO::FETCH_ASSOC));
 			return $cliente;
 		}
+		public function buscar_cliente_login($cliente){
+			$sql = "SELECT * FROM tb_cliente WHERE cli_user_name = ? AND cli_senha = ?;";
+			$stmt = $this->connection->prepare($sql);
+			$stmt->execute(
+				array(
+					$cliente->getUser() ,
+					$cliente->getSenha()
+			));
+			$cliente = $this->preenche_cliente_log($stmt->fetch(PDO::FETCH_ASSOC));
+			return $cliente;
+		}
 
 		public function buscar_cliente_cpf($cpf){
 			$sql = "CALL buscar_cliente_cpf(?);";
@@ -100,6 +111,15 @@
 			$end->setId($linha["end_id"]);
 
 			$cliente->setEndereco($end);
+			return $cliente;
+		}
+
+		private function preenche_cliente_log($linha){
+			$cliente = new Cliente();
+			
+			$cliente->setUser($linha["cli_user_name"]);
+			$cliente->setSenha($linha["cli_senha"]);
+			
 			return $cliente;
 		}
 	}

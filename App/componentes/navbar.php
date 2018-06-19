@@ -1,5 +1,3 @@
-
-
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -21,8 +19,19 @@
             <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="login.php">Agende Aqui</a></li> <!-- faltando teste de login !-->
-            <li><a href="login.php">Login</a></li>
+
+            <li><a href="agendar.php">Agende Aqui</a></li> <!-- faltando teste de login !-->
+            <?php 
+              if(isset($_SESSION["user"])){
+                session_destroy();
+                ?><li><a href="index.php">Sair</a></li>    
+              <?php }else{
+                ?><li><a href="login.php">Login</a></li>    <?php
+              }
+
+
+             ?>
+            
           </ul>
         </li>
         

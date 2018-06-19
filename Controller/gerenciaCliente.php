@@ -1,5 +1,6 @@
 <?php 
-	
+	session_start();
+
 	include "../Model/VO/cliente.php";
 	include "../Model/Dao/clienteDao.php";
 
@@ -7,6 +8,9 @@
 		switch ($_POST["op"]) {
 			case "cadastrarCliente":
 				cadastrar();
+				break;
+			case "login":
+				buscarCliente();
 				break;
 			default:
 				break;
@@ -31,6 +35,20 @@
 		$cliente->setEndereco($endereco);
 
 		$clienteDao->insere_cliente($cliente);
+	}
+
+	function buscarCliente(){
+		$clienteDao = new ClienteDao();
+
+		$cliente = new Cliente();
+
+		$cliente->setUser($_POST["nome"]);
+		$cliente->setSenha($_POST["senha"]);
+		
+
+		$cliente = $clienteDao->buscar_cliente_login($cliente);
+		$_SESSION["user"] = $cliente->getUser();
+		header("Location:../App/index.php");
 	}
 
 
