@@ -1,3 +1,9 @@
+<?php 
+  if (isset($_GET["deslog"])) {
+    session_destroy();
+    header("Location:index.php");
+  }
+ ?>
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -23,8 +29,7 @@
             <li><a href="agendar.php">Agende Aqui</a></li> <!-- faltando teste de login !-->
             <?php 
               if(isset($_SESSION["user"])){
-                session_destroy();
-                ?><li><a href="index.php">Sair</a></li>    
+                ?><li><a href="?deslog">Sair</a></li>    
               <?php }else{
                 ?><li><a href="login.php">Login</a></li>    <?php
               }
