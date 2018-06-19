@@ -39,14 +39,8 @@ function validarSenha(){
 <body>
   <?php include "componentes/navbar.php"; ?>
 
-
-
-
-<<<<<<< HEAD
-<form style="max-width: 500px; margin: 50px auto;" method="POST" action="../controller/gerenciaCliente.php" name="form">
-=======
 <form style="max-width: 500px; margin: 50px auto;" method="POST" action="../Controller/gerenciaCliente.php" name="form">
->>>>>>> d76f6a43728acf15e77674741c1aca8d049ad5cb
+
   <label for="exampleFormControlInput1" style="margin-left: 65px;"><h1>Cadastro de Usuários</h1></label>
     <div class="card card-container" style="width: 100%; height: 280px;">
 
@@ -71,8 +65,6 @@ function validarSenha(){
         <label for="entrarSenha">Senha</label>
         <input type="text" class="form-control" placeholder="No mínimo 8 caracteres" name="senha" required="">
 
-        
-
       </div>
       <div class="form-row">
         <label for="entrarData">Repetir Senha</label>
@@ -86,15 +78,7 @@ function validarSenha(){
       
     </div>
     
-    
-    
-    
-    
-
 </form>
-
-
-
 
 </body>
 </html>

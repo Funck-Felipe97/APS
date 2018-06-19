@@ -11,10 +11,6 @@
 		private $cidade;
 		private $numero;
 
-		function __construct(){
-			$this->id = $id;
-		}
-
 		public function getId(){
 			return $this->id;
 		}

@@ -17,25 +17,21 @@
 		$clienteDao = new ClienteDao();
 
 		$cliente = new Cliente();
-		$cliente->setNome = $_POST["nome"];
-		$cliente->setCpf = $_POST["cpf"];
-		$cliente->setData_nascimento = $_POST["data"];
-		$cliente->setEmail = $_POST["email"];
-		$cliente->setTelefone = $_POST["telefone"];
-		$cliente->setCidade = $_POST["cidade"];
-		$cliente->setBairro = $_POST["bairro"];
-		$cliente->setRua = $_POST["rua"];
-		$cliente->setUser = $_POST["user"];
-		$cliente->setSenha = $_POST["senha"];
+		$cliente->setNome($_POST["nome"]);
+		$cliente->setCpf($_POST["cpf"]);
+		$cliente->setData_nascimento($_POST["data"]);
+		$cliente->setSenha($_POST["senha"]);
+		$cliente->setUser($_POST["user"]);
+
+		$endereco = new Endereco();
+		$endereco->setCidade($_POST["cidade"]);
+		$endereco->setBairro = $_POST["bairro"];
+		$endereco->setRua = $_POST["rua"];
 		
+		$cliente->setEndereco($endereco);
+
 		$clienteDao->insere_cliente($cliente);
 	}
-
-	function listar_produtos_todos(){
-		$produtoDao = new ProdutoDao();
-		return $produtoDao->listar_produtos_todos();
-	}
-
 
 
  ?>
