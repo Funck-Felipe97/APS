@@ -3,10 +3,22 @@
 
     if(isset($_SESSION["user"])){        
         header("Location:index.php");
-    }
+    }  
+    print_r($_COOKIE['usuario']);
+ 
+    /*echo($_COOKIE["usuario"]);
+    if (isset($_COOKIE["usuario"]) and isset($_COOKIE["pass"])) {
+        $usuario = $_COOKIE["usuario"];
+        $pass = $_COOKIE["pass"];
 
- ?>
-
+        echo "$user";
+        echo "$senha";
+        echo "<script>
+            document.getElementById('nome').value = '$usuario';
+            document.getElementById('senha').value = '$pass';
+        </script>";
+    }*/
+?>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -25,11 +37,11 @@
             <form class="form-signin" name="form_login" method="POST" action="../Controller/gerenciaCliente.php">
                 <input type="hidden" name="op" value="login">
                 <span id="reauth-email" class="reauth-email"></span>
-                <input type="text" name="nome" class="form-control" placeholder="Nome" required autofocus>
-                <input type="text" name="senha" class="form-control" placeholder="Senha" required>
+                <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome" required autofocus>
+                <input type="text" name="senha" id="senha" class="form-control" placeholder="Senha" required>
                 <div id="remember" class="checkbox">
                     <label>
-                        <input type="checkbox" value="remember-me"> Lembre-se de mim
+                        <input type="checkbox" value="remember-me" name="lembrar"> Lembre-se de mim
                     </label>
                 </div>
                 <input type="submit" name="entrar" class="btn btn-lg btn-primary btn-block btn-signin" value="Entrar">

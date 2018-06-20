@@ -52,10 +52,18 @@
 
 		if (count($cliente->getUser()) > 0) {
 			$_SESSION["user"] = $cliente->getUser();
+
+			if(isset($_POST["lembrar"])){
+				$cli = $cliente->getUser();
+				$pass= $cliente->getSenha();
+				setcookie("usuario", $cli);
+				setcookie("pass", $pass);
+			}
 			header("Location:../App/index.php");
 		}else{
-			
-			header("Location:../App/login.php");
+			echo "<script>alert('NOME OU SENHA INVALIDOS')</script>";
+			echo "<META HTTP-EQUIV=Refresh CONTENT=\"0; URL=http://localhost:8080/APS/App/login.php\">";
+			#header("Location:../App/login.php");
 
 		}
 		
