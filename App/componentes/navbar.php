@@ -17,7 +17,7 @@
       <a class="navbar-brand" href="#">FJF</a>
       <?php 
         if(isset($_SESSION["user"])){?>
-          <a class="navbar-brand" href="#""><?php echo ($_SESSION["user"]); ?></a>
+          <a class="navbar-brand drop" href="editarCliente.php"><?php echo ($_SESSION["user"]); ?></a>
 
         <?php } ?>
       
