@@ -44,8 +44,22 @@
 		$funcionario->setEndereco($endereco);
 		$funcionario->setCargo($cargo);
 
-		var_dump($funcionario);
-		$funcionarioDao->insere_funcionario($funcionario);
+		if($funcionarioDao->insere_funcionario($funcionario))
+			echo(
+				"<script>
+					alert('Cadastro realizado com sucesso');
+				 </script>
+				"
+			);
+		else 
+			echo(
+				"<script>
+					alert('Erro ao realizar cadastro');
+				 </script>
+				"
+			);
+		
+		echo "<META HTTP-EQUIV=Refresh CONTENT=\"0; URL=http://localhost/APS/app/admin.php\">";
 	}
 
 	function buscarFuncionario(){

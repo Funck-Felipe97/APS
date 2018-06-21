@@ -20,8 +20,6 @@
 				<ul class="nav nav-pills nav-stacked">
 	    		<li class="active"><a href="#">Funções Administradoras</a></li>
 
-				
-	  		
 	    		<li><a href="Admin/cadastroFuncionario.php" class="btn btn-primary">Cadastrar Funcionários</a></li>
 	    		<li><a href="cadastroProduto.php" class="btn btn-primary">Cadastrar Produtos</a></li>
 	    		<li><a href="Admin/cadastroServico.php" class="btn btn-primary">Cadastrar Serviços</a></li>

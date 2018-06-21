@@ -17,7 +17,7 @@
 			$sql = "CALL insere_funcionario(? , ? , ? , ? , ? , ? , ? , ? , ? , ?);";
 			$stmt = $this->connection->prepare($sql);
 			
-			$stmt->execute(
+			return $stmt->execute(
 				array($funcionario->getNome() ,
 					  $funcionario->getCpf() ,
 					  $funcionario->getSenha() ,
