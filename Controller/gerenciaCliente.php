@@ -3,6 +3,7 @@
 
 	include "../Model/VO/cliente.php";
 	include "../Model/Dao/clienteDao.php";
+	include "../cookies.php";
 
 	if(isset($_POST["op"])){
 		switch ($_POST["op"]) {
@@ -54,12 +55,16 @@
 			$_SESSION["user"] = $cliente->getUser();
 
 			if(isset($_POST["lembrar"])){
-				$cli = $cliente->getUser();
-				$pass= $cliente->getSenha();
-				setcookie("usuario", $cli);
-				setcookie("pass", $pass);
+				$clie = $cliente->getUser();
+				$senh = $cliente->getSenha();
+				$criarCookie = new Cookies();
+				$a = $criarCookie->setCookies($clie,$senh);
+				
+			}else{
+				header("location:../App/index.php");
 			}
-			header("Location:../App/index.php");
+			
+			
 		}else{
 			echo "<script>alert('NOME OU SENHA INVALIDOS')</script>";
 			echo "<META HTTP-EQUIV=Refresh CONTENT=\"0; URL=http://localhost:8080/APS/App/login.php\">";

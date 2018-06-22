@@ -32,8 +32,8 @@
     <?php include "componentes/contato.php"; ?>
 
   </body>
-
-  <!--AQUI É O FOOTER ------------------------------------------------------------------------>
+  
+  <!--AQUI É O FOOTER -->
   <footer>
       
       <div class="row row-cinza-claro">

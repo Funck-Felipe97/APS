@@ -4,20 +4,10 @@
     if(isset($_SESSION["user"])){        
         header("Location:index.php");
     }  
-    print_r($_COOKIE['usuario']);
+    
  
-    /*echo($_COOKIE["usuario"]);
-    if (isset($_COOKIE["usuario"]) and isset($_COOKIE["pass"])) {
-        $usuario = $_COOKIE["usuario"];
-        $pass = $_COOKIE["pass"];
+    
 
-        echo "$user";
-        echo "$senha";
-        echo "<script>
-            document.getElementById('nome').value = '$usuario';
-            document.getElementById('senha').value = '$pass';
-        </script>";
-    }*/
 ?>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -57,3 +47,16 @@
     </div><!-- /container -->
 
 </div>
+<?php 
+    if (isset($_COOKIE["usuario"]) and isset($_COOKIE["pass"])) {
+        $usuario = $_COOKIE["usuario"];
+        $pass = $_COOKIE["pass"];
+
+        echo $_COOKIE["usuario"];
+        echo "<script>
+            document.getElementById('nome').value = '$usuario';
+            document.getElementById('senha').value = '$pass';
+        </script>";
+    }
+
+?>
