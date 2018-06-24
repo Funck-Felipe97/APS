@@ -50,36 +50,33 @@
               <div class="row row-cols">
                 <div class="col-md-4 col-popular-post">
 
-                  <ul class="list-unstyled">
+                  <ul class="list-unstyled text-left">
                     <h4>MENU</h4>
 
                   <ul class="list-unstyled">
-                    <li><a href="#"><i class="fas fa-hand-point-right"></i>Home</a></li>
-                    <li><a href="componentes/equipe.php"><i class="fas fa-hand-point-right"></i>Equipe</a></li>
-                    <li><a href="componentes/produto.php"><i class="fas fa-hand-point-right"></i>Produtos</a></li>
-                    <li><a href="componentes/contato.php"><i class="fas fa-hand-point-right"></i>Contato</a></li>
+                    <li><a href="http://localhost/APS/App/index.php"><i class="fas glyphicon glyphicon-menu-right"></i>Home</a></li>
+                    <li><a href="http://localhost/APS/App/index.php#equipe"><i class="fas glyphicon glyphicon-menu-right"></i>Equipe</a></li>
+                    <li><a href="http://localhost/APS/App/produtos.php#produtos"><i class="fas glyphicon glyphicon-menu-right"></i>Produtos</a></li>
+                    <li><a href="http://localhost/APS/App/index.php#contato"><i class="fas glyphicon glyphicon-menu-right"></i>Contato</a></li>
                   </ul>
 
                 </div>
-                <div class="col-md-4 col-get-in-touch">
+                <div class="col-md-4 col-get-in-touch text-left">
                   
                   <h4>SIGAM-NOS NAS REDES SOCIAIS</h4>
 
                   <address>
-                    <i class="fa fa-map-marker"><span>Santa Helena-PR</span></i>
+                    <i class="fa fa-map-marker"> Santa Helena-PR</i>
                   </address>
                   <ul class="list-unstyled list-socials">
                     <li>
-                      <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                      <a href="http://www.facebook.com.br" target="_blank"><i class="fa fa-facebook"></i></a>
                     </li>
                     <li>
-                      <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                      <a href="http://www.twitter.com.br" target="_blank"><i class="fa fa-twitter"></i></a>
                     </li>
                     <li>
-                      <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
-                    </li>
-                    <li>
-                      <a href="#" target="_blank"><i class="fa fa-pinterest-p"></i></a>
+                      <a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
                     </li>
                   </ul>
 

@@ -190,13 +190,17 @@ footer .row-cols time {
     font-family: Arial;
     font-size: 14px;
 }
-footer .col-links a {
-    color: #FFF;
+footer .col-popular-post a {
+    color: #9B9B9B;
     font-family: Arial;
     font-size: 14px;
 }
-footer .col-links .fa {
-    margin: 0 6px;
+footer .col-popular-post .fas {
+    margin: 3 0px;
+}
+
+footer .fas{
+    position: right;
 }
 footer .col-get-in-touch address {
     color:#666;
@@ -205,14 +209,21 @@ footer .col-get-in-touch address {
     margin-bottom: 6px;
 }
 
+footer .fa-map-marker{
+        bottom: 50px;
+        top: -50px;
+        left: 0px;
+
+}
+
 footer .col-get-in-touch address i {
     position: relative;
-    top: -14px;
+    top: -4px;
 }
 footer .col-get-in-touch i {
     color: #9B9B9B;
     font-size: 20px;
-    margin: 0 6px;
+    margin:0 6px;
 
 }
 footer .col-get-in-touch .fa{
