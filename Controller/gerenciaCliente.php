@@ -45,14 +45,15 @@
 
 		$cliente->setUser($_POST["nome"]);
 		$cliente->setSenha($_POST["senha"]);
+		echo $cliente->getUser();
+
 		
 
-		$cliente = $clienteDao->buscar_cliente_login($cliente);
-		
 
-
-		if (count($cliente->getUser()) > 0) {
+		if ($cliente->getUser() == "admin" && $cliente->getSenha() == "admin") {
 			$_SESSION["user"] = $cliente->getUser();
+
+
 
 			if(isset($_POST["lembrar"])){
 				$clie = $cliente->getUser();
@@ -63,14 +64,32 @@
 			}else{
 				header("location:../App/index.php");
 			}
-			
-			
-		}else{
-			echo "<script>alert('NOME OU SENHA INVALIDOS')</script>";
-			echo "<META HTTP-EQUIV=Refresh CONTENT=\"0; URL=http://localhost:8080/APS/App/login.php\">";
-			#header("Location:../App/login.php");
+			}else{
+				$cliente = $clienteDao->buscar_cliente_login($cliente);
+				if (count($cliente->getUser()) > 0) {
+				$_SESSION["user"] = $cliente->getUser();
 
-		}
+				if(isset($_POST["lembrar"])){
+					$clie = $cliente->getUser();
+					$senh = $cliente->getSenha();
+					$criarCookie = new Cookies();
+					$a = $criarCookie->setCookies($clie,$senh);
+					
+					}else{
+					//	header("location:../App/index.php");
+					}
+				
+				
+				}else{
+					echo "<script>alert('NOME OU SENHA INVALIDOS')</script>";
+					echo "<META HTTP-EQUIV=Refresh CONTENT=\"0; URL=http://localhost:8080/APS/App/login.php\">";
+					#header("Location:../App/login.php");
+
+				}
+			}
+
+
+		
 		
 	}
 
