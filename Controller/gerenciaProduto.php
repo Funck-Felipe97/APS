@@ -38,7 +38,7 @@
 				"
 			);
 		
-		echo "<META HTTP-EQUIV=Refresh CONTENT=\"0; URL=http://localhost/APS/app/admin.php\">";
+		echo "<META HTTP-EQUIV=Refresh CONTENT=\"0; URL=http://localhost:8080/APS/App/cadastroProduto.php\">";
 	}
 
 	function listar_produtos_todos(){

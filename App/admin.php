@@ -28,9 +28,9 @@
 				<ul class="nav nav-pills nav-stacked">
 	    		<li class="active"><a href="#">Funções Administradoras</a></li>
 
-	    		<li><a href="Admin/cadastroFuncionario.php" class="btn btn-primary">Cadastrar Funcionários</a></li>
+	    		<li><a href="cadastroFuncionario.php" class="btn btn-primary">Cadastrar Funcionários</a></li>
 	    		<li><a href="cadastroProduto.php" class="btn btn-primary">Cadastrar Produtos</a></li>
-	    		<li><a href="Admin/cadastroServico.php" class="btn btn-primary">Cadastrar Serviços</a></li>
+	    		<li><a href="cadastroServico.php" class="btn btn-primary">Cadastrar Serviços</a></li>
 	    		<li><a href="#" class="btn btn-primary">Verificar Agendamentos</a></li>    
   			</ul>
 	  	</div>

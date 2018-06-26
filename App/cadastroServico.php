@@ -16,7 +16,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- css extra -->
-  <link rel="stylesheet" type="text/css" href="../css/format.css">
+  <link rel="stylesheet" type="text/css" href="css/format.css">
 
 </head>
 
@@ -24,7 +24,7 @@
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <!-- incluindo navbar.php (Menu) -->
-    <?php include "../componentes/navbar.php" ?>
+    <?php include "componentes/navbar.php" ?>
     
    
     <div  id="cadastro" class="container" style="height: 100%; margin-top: 5em; margin-bottom: 12em;">
@@ -49,7 +49,7 @@
   
           </form>
           <br>
-          <a href="../admin.php" class="btn btn-primary">Voltar</a>
+          <a href="admin.php" class="btn btn-primary">Voltar</a>
       </div>
 
 	 </div>

@@ -8,24 +8,24 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="../css/format.css">
-<link rel="stylesheet" type="text/css" href="../css/format_login.css">
+<link rel="stylesheet" type="text/css" href="css/format.css">
+<link rel="stylesheet" type="text/css" href="css/format_login.css">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 
 <?php 
-  include "../componentes/navbar.php";
-  include "../../Model/VO/servico.php";  
-  include "../../Model/Dao/ServicoDao.php";
+  include "componentes/navbar.php";
+  include "../Model/VO/servico.php";  
+  include "../Model/Dao/ServicoDao.php";
   
   $servDao = new ServicoDao();
   $servicos = $servDao->listar_servicos_todos();
 ?>
 
 
-<form style="max-width: 500px; margin: 50px auto;" method="POST" action="../../Controller/gerenciaFuncionario.php">
+<form style="max-width: 500px; margin: 50px auto;" method="POST" action="../Controller/gerenciaFuncionario.php">
 
   <input type="hidden" name="op" value="cadastrarFuncionario">
 
@@ -103,7 +103,9 @@
           <input type="text" class="form-control" name="rua" required="">
         </div>      
     </div>
-    <button type="submit" class="btn btn-primary" style="float: right;">Próximo</button>
+    <button type="submit" class="btn btn-primary" style="float: right;">Cadastrar</button>
+    
+    
   	</div>
     
 </form>
