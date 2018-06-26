@@ -1,4 +1,9 @@
 <?php 
+  
+  
+?>
+
+<?php 
   if (isset($_GET["deslog"])) {
     session_destroy();
     header("Location:index.php");
@@ -24,6 +29,17 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
+
+        <?php 
+          if (isset($_SESSION["user"]) && $_SESSION["user"] == "admin") {
+            ?>    
+            <li><a href="admin.php">ADMINISTRAR</a></li>
+        <?php  }
+        ?>
+        
+        
+
+
         <li><a href="index.php#myCarousel">HOME</a></li>
         <li><a href="index.php#equipe">EQUIPE</a></li>
         <li><a href="produtos.php#produtos">PRODUTOS</a></li>

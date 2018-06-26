@@ -45,7 +45,7 @@
 
 		$cliente->setUser($_POST["nome"]);
 		$cliente->setSenha($_POST["senha"]);
-		echo $cliente->getUser();
+		
 
 		
 
@@ -76,7 +76,7 @@
 					$a = $criarCookie->setCookies($clie,$senh);
 					
 					}else{
-					//	header("location:../App/index.php");
+						header("location:../App/index.php");
 					}
 				
 				

@@ -23,7 +23,24 @@
 		$servico->setDescricao($_POST["descricao"]);
 		$servico->setPreco($_POST["preco"]);
 
-		$servicoDao->inserir_servico($servico);
+		
+		if($servicoDao->inserir_servico($servico))
+			echo(
+				"<script>
+					alert('Serviço cadastrado com sucesso');
+				 </script>
+				"
+			);
+		else 
+			echo(
+				"<script>
+					alert('Erro ao realizar cadastro');
+				 </script>
+				"
+			);
+		
+		echo "<META HTTP-EQUIV=Refresh CONTENT=\"0; URL=http://localhost/APS/app/admin.php\">";
+	}
 	}
 
 
