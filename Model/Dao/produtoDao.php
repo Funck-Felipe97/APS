@@ -15,7 +15,7 @@
 			$stmt = $this->connection->prepare($sql);
 			
 			$img = $produto->getImagem();
-			$stmt->execute(
+			return $stmt->execute(
 				array(
 					$produto->getDescricao() ,
 					$produto->getPreco() ,

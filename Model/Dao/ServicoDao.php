@@ -16,7 +16,7 @@
 			
 			$sql = "INSERT INTO tb_servicos (ser_descricao, ser_preco) VALUES (?, ?)";
 			$stmt = $this->connection->prepare($sql);
-			$stmt->execute(array(
+			return $stmt->execute(array(
 				$servico->getDescricao() ,
 				$servico->getPreco()
 			));

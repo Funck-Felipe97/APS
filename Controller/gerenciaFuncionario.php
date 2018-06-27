@@ -51,6 +51,7 @@
 				 </script>
 				"
 			);
+
 		else 
 			echo(
 				"<script>
@@ -59,7 +60,7 @@
 				"
 			);
 		
-		echo "<META HTTP-EQUIV=Refresh CONTENT=\"0; URL=http://localhost:8080/APS/App/cadastroFuncionario.php\">";
+		echo "<META HTTP-EQUIV=Refresh CONTENT=\"0; URL=http://localhost:8080/APS/App/admin.php\">";
 	}
 
 	function buscarFuncionario(){

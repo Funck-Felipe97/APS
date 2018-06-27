@@ -36,6 +36,7 @@
 		$cliente->setEndereco($endereco);
 
 		$clienteDao->insere_cliente($cliente);
+		header("location:../App/index.php");
 	}
 
 	function buscarCliente(){
@@ -76,6 +77,7 @@
 					$a = $criarCookie->setCookies($clie,$senh);
 					
 					}else{
+
 						header("location:../App/index.php");
 					}
 				
