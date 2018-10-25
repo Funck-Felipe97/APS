@@ -19,7 +19,7 @@
     $mail->SMTPSecure = 'tls';
 
     $mail->Username = "funck@alunos.utfpr.edu.br";
-    $mail->Password = 'qexlht75';
+    $mail->Password = '';
     $mail->Port = 587;
     
     $mail->setFrom($_POST["email"]);
